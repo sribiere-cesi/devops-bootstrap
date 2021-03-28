@@ -1,0 +1,11 @@
+---
+- hosts: default
+  become: yes
+  ignore_errors: yes
+  vars:
+    docker_release: edge
+    docker_users:
+      - vagrant
+  roles:
+    - docker
+    - apt
