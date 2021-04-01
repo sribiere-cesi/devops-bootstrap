@@ -1,11 +1,13 @@
 ---
-- hosts: default
+- hosts: sribiere
   become: yes
   ignore_errors: yes
   vars:
     docker_release: edge
     docker_users:
-      - vagrant
+      - sribiere
+      - ubuntu
   roles:
     - docker
+    - docker-compose
     - apt

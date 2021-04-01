@@ -1,0 +1,5 @@
+---
+all:
+  hosts:
+    sribiere:
+      ansible_host: 15.237.83.74

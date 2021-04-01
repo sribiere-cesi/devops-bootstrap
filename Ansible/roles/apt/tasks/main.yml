@@ -5,3 +5,11 @@
     upgrade: full
     autoremove: yes
     cache_valid_time: 3600
+  when: ansible_os_family == "Debian"
+
+- name: update cache
+  yum:
+    name: '*'
+    update_cahe: yes
+    state: latest
+  when: ansible_os_family == "RedHat"
