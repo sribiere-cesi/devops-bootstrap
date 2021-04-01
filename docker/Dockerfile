@@ -7,3 +7,4 @@ COPY index.html /www
 RUN mkdir /etc/apache2/sites-enabled
 COPY default.conf /etc/apache2/sites-enabled
 EXPOSE 8080
+CMD ["sh", "-c", "httpd -D FOREGROUND"]
