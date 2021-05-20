@@ -2,4 +2,5 @@
 all:
   hosts:
     sribiere:
-      ansible_host: 15.237.83.74
+      ansible_host: 35.180.85.240
+      ansible_python_interpreter: /usr/bin/python3

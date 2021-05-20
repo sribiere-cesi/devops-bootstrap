@@ -1,5 +1,6 @@
 ---
-- hosts: sribiere
+- hosts:
+    - sribiere
   become: yes
   ignore_errors: yes
   vars:
